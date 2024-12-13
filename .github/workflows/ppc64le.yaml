@@ -1,7 +1,7 @@
 on: [pull_request]
 
 jobs:
-  packages:
+  ppc64le-build-and-test:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger a Buildkite Build
@@ -13,7 +13,7 @@ jobs:
           build_env_vars: '{"TRIGGERED_FROM_GHA": "true"}'
           build_meta_data: '{"FOO": "bar"}'
           ignore_pipeline_branch_filter: true     
-          send_pull_request: true
+          send_pull_request: 'true'
           wait: 'true'
           wait_interval: '60'
           wait_timeout: '7200'
