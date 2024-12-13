@@ -8,6 +8,7 @@ jobs:
         uses: "EnricoMi/trigger-pipeline-action@master"
         env:
           BUILDKITE_API_ACCESS_TOKEN: "bkua_2d8f08a3a986f9c87da68e5d5cfac22a98ee3243"
+          PIPELINE: "ibm-14/ppc64le-build"
         with:
           buildkite_api_access_token: "bkua_2d8f08a3a986f9c87da68e5d5cfac22a98ee3243"
           pipeline: "ibm-14/ppc64le-build"
