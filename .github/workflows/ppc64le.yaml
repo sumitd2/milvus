@@ -7,7 +7,7 @@ jobs:
       - name: Trigger a Buildkite Build
         uses: "buildkite/trigger-pipeline-action@v2.3.0"
         with:
-          buildkite_api_access_token: "bkua_2d8f08a3a986f9c87da68e5d5cfac22a98ee3243"
+          buildkite_api_access_token: "bkua_702df6e3ef4a32a8dff371e75e8db64d3286fad0"
           pipeline: "ibm-14/ppc64le-build"
           message:  ":github: Triggered from a GitHub Action"
           build_env_vars: '{"TRIGGERED_FROM_GHA": "true"}'
