@@ -94,6 +94,7 @@ conan export-pkg . cmake/${CMAKE_REQUIRED_VERSION}@ -s os="Linux" -s arch="ppc64
 conan profile update settings.compiler.libcxx=libstdc++11 default
 popd
 export VCPKG_FORCE_SYSTEM_BINARIES=1
+export ENABLE_AZURE=false
 mkdir -p $HOME/.cargo/bin/
 ret=0
 make -j$(nproc) || ret=$?
