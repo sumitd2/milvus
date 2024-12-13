@@ -15,5 +15,5 @@ jobs:
           ignore_pipeline_branch_filter: true     
           send_pull_request: true
           wait: 'true'
-          wait_interval: '10'
+          wait_interval: '60'
           wait_timeout: '7200'
