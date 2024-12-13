@@ -2,7 +2,7 @@
 set -ex
 
 # Setup cleanup
-remove_docker_container() { docker rm -f milvus-build || true; docker system prune --all; }
+remove_docker_container() { docker rm -f milvus-build || true; docker system prune -f --all; }
 trap remove_docker_container EXIT
 remove_docker_container
 
