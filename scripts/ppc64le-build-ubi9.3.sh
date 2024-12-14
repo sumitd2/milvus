@@ -105,6 +105,9 @@ then
 fi
 export MILVUS_BIN=$wdir/${PACKAGE_NAME}/bin/milvus
 
+#Disable Azure tests
+sed -i "s#test_azure_chunk_manager.cpp##g" ./internal/core/unittest/CMakeLists.txt
+
 #Cpp unit tests
 cd $wdir/${PACKAGE_NAME}/
 make test-cpp -j$(nproc) || ret=$?
